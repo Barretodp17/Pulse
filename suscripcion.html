@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse</title>
+    <link rel="shortcut icon" href="assets/logo--.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="suscripcion">
+        <!--LOGO-->
+        <div class="suscripcion-logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="logo">
+            </a>
+        </div>
+
+        <!--ENCABEZADO-->
+        <section class="sus-header">
+            <h1>Elegí tu suscripción</h1>
+
+            <p class="section-descripcion">
+                Disfrutá de todas las novedades y contenido exclusivo de PULSE
+            </p>
+        </section>
+
+        <!--PLANES-->
+        <section class="planes">
+            <!--plan basico-->
+            <article class="plan-card">
+                <h2>Básico</h2>
+                <p class="plan-descripcion">
+                    Para descubrir el contenido de PULSE.
+                </p>
+                <div class="precio">
+                    <span class="moneda">$</span>
+                    <span class="monto">0</span>
+                    <span class="periodo">mes</span>
+                </div>
+
+                <ul class="beneficios">
+                    <li>✓ Acceso a noticias</li>
+                    <li>✓ Contenido gratuito</li>
+                    <li>✓ Nuestras novedades</li>
+                </ul>
+                <a href="#registro" class="boton-plan">Elegir plan</a>
+            </article>
+
+            <!--plan premium-->
+            <article class="plan-premium">
+                <h2>Premium</h2>
+                <p class="plan-descripcion">
+                    Para disfrutar de una experiencia completa.
+                </p>
+                <div class="precio">
+                    <span class="moneda">$</span>
+                    <span class="monto">0</span>
+                    <span class="periodo">mes</span>
+                </div>
+
+                <ul>
+                    <li>✓ Contenido básico</li>
+                    <li>✓ Contenido exclusivo</li>
+                    <li>✓ Acceso anticipado</li>
+                    <li>✓ Sin anuncios</li>
+                </ul>
+
+                <a href="#registro" class="boton-plan">Elegir plan</a>
+            </article>
+
+            <!--plan anual-->
+            <article class="plan-card">
+                <h2>Anual</h2>
+                <p class="plan-descripcion">
+                    Disfruta PULSE durante tod el año.
+                </p>
+                <div class="precio">
+                    <span class="moneda">$</span>
+                    <span class="monto">0</span>
+                    <span class="periodo">año</span>
+                </div>
+                <ul>
+                    <li>✓ Contenido premium</li>
+                    <li>✓ Acceso durante un año</li>
+                    <li>✓ Beneficios exclusivos</li>
+                </ul>
+                <a href="#registro" class="boton-plan">Elegir plan</a>
+            </article>
+        </section>
+
+        <!--REGISTRO-->
+        <section class="registro" id="registro">
+            <div class="regis-header">
+                <p class="section-label">CREÁ TU CUENTA</p>
+                <h2>Registrate en PULSE</h2>
+                <p>Completa tus datos para continuar.</p>
+            </div>
+            <form action="#" method="post" class="form-registro">
+                <!--nombre-->
+                <div class="grupos">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresar nombre"> required
+                </div>
+                <!--apellido-->
+                <div class="grupos">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingresar apellido" required>
+                </div>
+                <!--email-->
+                <div class="grupos">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="registro-email" placeholder="Ingresar correo electrónico"
+                        required>
+                </div>
+                <!--contraseña-->
+                <div class="grupos">
+                    <label for="registro-password">Contraseña</label>
+                    <input type="password" name="passwordd=" id="registro-password" placeholder="Crear contraseña"
+                        minlength="8" required>
+                </div>
+                <!--confirmar contraseña-->
+                <div class="grupos">
+                    <label for="confirm-password">Confirmar contraseña</label>
+                    <input type="password" name="confirm-password=" id="confirm-password"
+                        placeholder="Repetir contraseña" minlength="8" required>
+                </div>
+                <!--terminos-->
+                <div class="terminos">
+                    <input type="checkbox" name="terminos" id="terminos" required>
+                    <label for="terminos">
+                        Acepto los términos y condiciones.
+                    </label>
+                </div>
+                <!--boton-->
+                <button type="submit" class="boton-registro">Crear cuenta</button>
+            </form>
+
+            <p class="login-link">
+                ¿Ya tenes una cuenta?
+                <a href="login.html">Iniciar sesión</a>
+            </p>
+        </section>
+
+        <!--VOLVER A INICIO-->
+        <a href="index.html" class="inicio">
+            ⟵ Volver al inicio
+        </a>
+    </main>
+</body>
+
+</html>
