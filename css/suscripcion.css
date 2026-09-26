@@ -1,0 +1,105 @@
+body{
+    font-family: var(--font-family2);
+    color: var(--color-textdark);
+}
+
+.suscripcion{
+    min-height: 100vh;
+    padding: 30px 6% 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.suscripcion-logo{
+    margin-bottom: 30px;
+}
+.suscripcion-logo img{
+    width: 230px;
+    max-width: 100%;
+    display: block;
+}
+.sus-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.sus-header h1{
+    font-size: 40px;
+    line-height: 1.5;
+}
+.section-descripcion{
+    max-width: 520px;
+    font-size: 18px;
+    color: var(--color-grey);
+}
+.planes{
+    width: 100%;
+    max-width: 1150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+.plan-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 28px;
+    background-color: #ffffff;
+    border: 1px solid var(--color-light);
+    min-height: 300px;
+    white-space: nowrap;
+}
+.plan-card h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.plan-descripcion{
+    min-height: 48px;
+    color: var(--color-grey);
+    font-size: 14px;
+    line-height: 1.5;
+}
+.precio{
+    display: flex;
+    align-items: baseline;
+    margin: 15px 0;
+}
+.moneda{
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 4px;
+}
+.monto{
+    font-size: 38px;
+    font-weight: 700;
+}
+.periodo{
+    font-size: 15px;
+    color: var(--color-grey);
+    margin-left: 5px;
+}
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+.beneficios li{
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--color-textdark);
+}
+.boton-plan{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
