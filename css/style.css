@@ -1,5 +1,22 @@
+@import url(bar.css);
+@import url(login.css);
+@import url(suscripcion.css);
+@import url(registro.css);
 * {
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
 }
+
+:root {
+--color-primary: #F25D27;
+--color-secondary: #F27F3D;
+--color-dark: #1C2026;
+--color-light: #F2EFEB;
+--color-textdark:  #172334;
+--color-textlight: #DEE2E5;
+--color-grey: #686868;
+--font-family1: "'Google Sans Flex', monospace";
+--font-family2: "'Montserrat', sans-serif'";
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse</title>
+    <link rel="shortcut icon" href="assets/logo--.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <!--REGISTRO-->
+        <section class="registro">
+            <div class="regis-header">
+                <p class="section-label">CREÁ TU CUENTA</p>
+                <h2>Registrate en PULSE</h2>
+                <p>Completa tus datos para continuar.</p>
+            </div>
+            <form action="#" method="post" class="form-registro">
+                <!--nombre-->
+                <div class="grupos">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresar nombre" required> 
+                </div>
+                <!--apellido-->
+                <div class="grupos">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingresar apellido" required>
+                </div>
+                <!--email-->
+                <div class="grupos">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="registro-email" placeholder="Ingresar correo electrónico"
+                        required>
+                </div>
+                <!--contraseña-->
+                <div class="grupos">
+                    <label for="registro-password">Contraseña</label>
+                    <input type="password" name="password=" id="registro-password" placeholder="Crear contraseña"
+                        minlength="8" required>
+                </div>
+                <!--confirmar contraseña-->
+                <div class="grupos">
+                    <label for="confirm-password">Confirmar contraseña</label>
+                    <input type="password" name="confirm-password" id="confirm-password"
+                        placeholder="Repetir contraseña" minlength="8" required>
+                </div>
+                <!--terminos-->
+                <div class="terminos">
+                    <input type="checkbox" name="terminos" id="terminos" required>
+                    <label for="terminos">
+                        Acepto los términos y condiciones.
+                    </label>
+                </div>
+                <!--boton-->
+                <button type="submit" class="boton-crear">Crear cuenta</button>
+            </form>
+
+            <p class="login-link">
+                ¿Ya tenes una cuenta?
+                <a href="login.html">Iniciar sesión</a>
+            </p>
+        </section>
+
+        <!--VOLVER A INICIO-->
+        <a href="index.html" class="inicio">
+            ⟵ Volver al inicio
+        </a>
+    </main>
+</body>
+</html>
