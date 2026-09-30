@@ -70,6 +70,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 12px rgb(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .post img {
@@ -111,6 +112,10 @@ body {
     opacity: 0.8;
 }
 
+.post:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
 .search-box,
 .categorias-box {
     background-color: var(--color-light);
@@ -182,6 +187,7 @@ body {
 
 .publicidad-box p {
     margin-bottom: 20px;
+    
 }
 
 .publicidad-box a {
@@ -191,6 +197,8 @@ body {
 
 .publicidad-box a:hover {
     color: var(--color-primary);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .paginacion {

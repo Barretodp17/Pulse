@@ -36,13 +36,15 @@
                 <!--contraseña-->
                 <div class="grupos">
                     <label for="registro-password">Contraseña</label>
-                    <input type="password" name="password=" id="registro-password" placeholder="Crear contraseña"
+                    <input type="password" name="password=" id="registro-password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}"
+  title="Debe tener al menos 8 caracteres, una mayúscula, una minúscula y un número" placeholder="Crear contraseña"
                         minlength="8" required>
                 </div>
                 <!--confirmar contraseña-->
                 <div class="grupos">
                     <label for="confirm-password">Confirmar contraseña</label>
-                    <input type="password" name="confirm-password" id="confirm-password"
+                    <input type="password" name="confirm-password" id="confirm-password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}"
+  title="Debe tener al menos 8 caracteres, una mayúscula, una minúscula y un número"
                         placeholder="Repetir contraseña" minlength="8" required>
                 </div>
                 <!--terminos-->
