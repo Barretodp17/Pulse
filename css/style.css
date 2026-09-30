@@ -1,27 +1,30 @@
-:root {
---color-primary: #F25D27;
---color-secondary: #F27F3D;
---color-dark: #1C2026;
---color-light: #F2EFEB;
---color-textdark: #000000;
---color-background: #f5f1ea;
-}
-
 @import url(bar.css);
 @import url(login.css);
 @import url(suscripcion.css);
 @import url(registro.css);
+
 * {
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
 }
 
-body{
+:root {
+    --color-primary: #F25D27;
+    --color-secondary: #F27F3D;
+    --color-dark: #1C2026;
+    --color-light: #F2EFEB;
+    --color-textdark: #000000;
+    --color-textlight: #F2EFEB;
+    --color-background: #f5f1ea;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-background);
     color: var(--color-text)
 }
+
 .blog {
     width: 90%;
     max-width: 1450px;
@@ -42,7 +45,8 @@ body{
     object-fit: cover;
     display: block;
 }
-.posts{
+
+.posts {
     width: 100%;
 }
 
@@ -54,32 +58,37 @@ body{
     margin-bottom: 30px;
 }
 
-.posts-header h2{
+.posts-header h2 {
     font-size: 32px;
     color: var(--color-dark);
 }
+
 .post {
     display: flex;
     background-color: var(--color-light);
     margin-bottom: 25px;
     border-radius: 10px;
-    overflow:hidden;
+    overflow: hidden;
     box-shadow: 0 3px 12px rgb(0, 0, 0, 0.08);
 }
+
 .post img {
     width: 40%;
     height: 250px;
     object-fit: cover;
 }
+
 .post-info {
     width: 60%;
     padding: 25px;
 }
-.post-info h3{
+
+.post-info h3 {
     font-size: 24px;
     color: var(--color-textdark);
     margin-bottom: 15px;
 }
+
 .post-info p {
     font-size: 16px;
     line-height: 1.6;
@@ -87,7 +96,8 @@ body{
     margin-bottom: 20px;
 
 }
-.post-info a{
+
+.post-info a {
     display: inline-block;
     padding: 10px 18px;
     background-color: var(--color-primary);
@@ -96,20 +106,25 @@ body{
     border-radius: 5px;
 
 }
+
 .post-info a:hover {
     opacity: 0.8;
 }
-.search-box, .categorias-box {
+
+.search-box,
+.categorias-box {
     background-color: var(--color-light);
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 25px;
 }
-.search-box h2, .categorias-box h2 {
-        font-size: 22px;
-        color: var(--color-textdark);
-        margin-bottom: 20px;
-    
+
+.search-box h2,
+.categorias-box h2 {
+    font-size: 22px;
+    color: var(--color-textdark);
+    margin-bottom: 20px;
+
 }
 
 .search-box form {
@@ -136,7 +151,7 @@ body{
     padding: 0;
 }
 
-.categorias-box li{
+.categorias-box li {
     margin-bottom: 12px;
 }
 
@@ -145,7 +160,7 @@ body{
     text-decoration: none;
 }
 
-.categorias-box a:hover{
+.categorias-box a:hover {
     color: var(--color-primary);
 }
 
@@ -168,6 +183,7 @@ body{
 .publicidad-box p {
     margin-bottom: 20px;
 }
+
 .publicidad-box a {
     color: var(--color-light);
     text-decoration: none;
@@ -185,7 +201,7 @@ body{
     margin-top: 30px;
 }
 
-.paginacion a{
+.paginacion a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,7 +216,7 @@ body{
     border-radius: 6px;
 }
 
-.paginacion a:hover{
+.paginacion a:hover {
     background-color: var(--color-primary);
     color: var(--color-light);
     border-color: var(--color-primary);
@@ -218,7 +234,7 @@ body{
 
 @media (max-width: 768px) {
 
-    .hero .carousel-item img{
+    .hero .carousel-item img {
         width: 100%;
         height: auto;
         object-fit: contain;
@@ -236,7 +252,7 @@ body{
     .post-info {
         width: 100%;
     }
-    
+
 }
 
 @media (max-width: 576px) {
@@ -269,9 +285,11 @@ body{
     .publicidad-box {
         display: none;
     }
-    .search-box, .categorias-box {
-    width: 100%;
-}
+
+    .search-box,
+    .categorias-box {
+        width: 100%;
+    }
 }
 
 @media (max-width: 375px) {
@@ -284,6 +302,7 @@ body{
     .search-box input {
         width: 100%;
     }
+
     .paginacion {
         gap: 5px;
         flex-wrap: wrap;
