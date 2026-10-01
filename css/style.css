@@ -4,13 +4,12 @@
 @import url(registro.css);
 @import url(post.css);
 @import url(sidebar.css);
-
+@import url(hero.css);
 * {
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
 }
-
 :root {
     --color-primary: #F25D27;
     --color-secondary: #F27F3D;
@@ -20,112 +19,8 @@
     --color-textlight: #F2EFEB;
     --color-background: #f5f1ea;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-background);
     color: var(--color-text)
-}
-
-.hero {
-    width: 100%;
-}
-
-.hero .carousel-item img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-    display: block;
-}
-
-@media (max-width: 1100px) {
-
-    .hero .carousel-item img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-}
-
-@media (max-width: 768px) {
-
-    .hero .carousel-item img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .post {
-        flex-direction: column;
-    }
-
-    .post img {
-        width: 100%;
-        height: 220px;
-    }
-
-    .post-info {
-        width: 100%;
-    }
-
-}
-
-@media (max-width: 576px) {
-    .hero .carousel-item img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .blog {
-        width: 90%;
-        grid-template-columns: 1fr;
-        padding: 20px 0;
-    }
-
-    .post {
-        flex-direction: column;
-        display: block;
-    }
-
-    .post img {
-        width: 100%;
-        height: auto;
-    }
-
-    .post-info {
-        width: 100%;
-    }
-
-    .publicidad-box {
-        display: none;
-    }
-
-    .search-box,
-    .categorias-box {
-        width: 100%;
-    }
-}
-
-@media (max-width: 375px) {
-
-    .blog {
-        display: block;
-        padding: 20px 10px;
-    }
-
-    .search-box input {
-        width: 100%;
-    }
-
-    .paginacion {
-        gap: 5px;
-        flex-wrap: wrap;
-    }
-
-    .paginacion a {
-        min-width: 0;
-        padding: 0 8px;
-    }
 }
