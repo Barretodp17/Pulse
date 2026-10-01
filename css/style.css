@@ -6,6 +6,7 @@
 @import url(sidebar.css);
 @import url(hero.css);
 @import url(contacto.css);
+@import url(footer.css);
 * {
     margin: 0;
     padding: 0%;
