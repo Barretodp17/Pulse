@@ -32,7 +32,8 @@
             <!--CONTRASEÑA-->
             <div class="formulario">
                 <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" placeholder="Ingresar contraseña" required>
+                <input type="password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}"
+  title="Debe tener al menos 8 caracteres, una mayúscula, una minúscula y un número"  placeholder="Ingresar contraseña" required>
             </div>
             <!--RECUPERAR CONTRASEÑA-->
             <div class="recuperacion">
