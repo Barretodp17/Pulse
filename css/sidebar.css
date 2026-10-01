@@ -1,0 +1,112 @@
+.search-box,
+.categorias-box {
+    background-color: var(--color-light);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box h2,
+.categorias-box h2 {
+    font-size: 22px;
+    color: var(--color-textdark);
+    margin-bottom: 20px;
+
+}
+
+.search-box form {
+    display: flex;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d5d5d5;
+    outline: none;
+}
+
+.search-box button {
+    padding: 12px 18px;
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    cursor: pointer;
+}
+
+.categorias-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categorias-box li {
+    margin-bottom: 12px;
+}
+
+.categorias-box a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.categorias-box a:hover {
+    color: var(--color-primary);
+}
+
+.publicidad-box {
+    min-height: 300px;
+    padding: 30px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.publicidad-box h2 {
+    font-size: 40px;
+    color: var(--color-primary);
+}
+
+.publicidad-box p {
+    margin-bottom: 20px;
+
+}
+
+.publicidad-box a {
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+.publicidad-box a:hover {
+    color: var(--color-primary);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 576px) {
+    .publicidad-box {
+        display: none;
+    }
+
+    .search-box,
+    .categorias-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .paginacion {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .paginacion a {
+        min-width: 0;
+        padding: 0 8px;
+    }
+}
