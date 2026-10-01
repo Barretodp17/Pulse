@@ -1,0 +1,49 @@
+footer{
+    background-color: #f25d27;
+    color :white;
+    padding : 40px 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat (3, 1fr) ;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto
+}
+.enlaces_footer{
+    display: flex;
+    flex-direction: column;
+    color: #172334; 
+    margin-bottom: 20px;  
+}
+.enlaces_footer a{
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 1.5;
+}
+.logo{
+width: 150px;
+height: auto;
+margin-top: -30px;
+margin-bottom: -30px;
+}
+.columna h2{
+    font-size: 20px
+}
+.columna p{
+    font-size: 13px;
+    line-height: 1.8;
+
+}
+.imagen-fotter{
+    width: 20px;
+   margin-top: 15px;
+   margin-bottom: 15px ; 
+}
+.copyright{
+    display: flex;
+    text-align: center;
+}

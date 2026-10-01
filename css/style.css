@@ -6,6 +6,7 @@
 @import url(post.css);
 @import url(sidebar.css);
 @import url(hero.css);
+@import url(footer.css);
 * {
     margin: 0;
     padding: 0%;
@@ -16,12 +17,15 @@
     --color-secondary: #F27F3D;
     --color-dark: #1C2026;
     --color-light: #F2EFEB;
-    --color-textdark: #000000;
-    --color-textlight: #F2EFEB;
+    --color-textdark: #172334;
+    --color-textlight: #DEE2E5;
     --color-background: #f5f1ea;
+    --color-grey: #686868;
+
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--color-background);
     color: var(--color-text)
 }
+
