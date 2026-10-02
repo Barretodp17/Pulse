@@ -1,0 +1,111 @@
+.blog {
+    width: 90%;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.posts {
+    width: 100%;
+}
+
+.sidebar {
+    width: 100%;
+}
+
+.posts-header {
+    margin-bottom: 30px;
+}
+
+.posts-header h2 {
+    font-size: 32px;
+    color: var(--color-dark);
+}
+
+.post {
+    display: flex;
+    background-color: var(--color-light);
+    margin-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgb(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post img {
+    width: 40%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.post-info {
+    width: 60%;
+    padding: 25px;
+}
+
+.post-info h3 {
+    font-size: 24px;
+    color: var(--color-textdark);
+    margin-bottom: 15px;
+}
+
+.post-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+
+}
+
+.post-info a {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.post-info a:hover {
+    opacity: 0.8;
+}
+
+.post:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.paginacion a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 40px;
+    height: 40px;
+    padding: 0 10px;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    text-decoration: none;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+}
+
+.paginacion a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border-color: var(--color-primary);
+}
+
