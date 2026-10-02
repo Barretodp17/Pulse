@@ -107,3 +107,92 @@ body{
     background-color: var(--color-primary);
     color: var(--color-textlight);
 }
+
+
+/*tablet*/
+@media (max-width: 768px){
+    
+
+    /* ===== SUSCRIPCIÃ“N ===== */
+    .suscripcion {
+        padding: 30px 5% 40px;
+    }
+
+    .sus-header h1 {
+        font-size: 34px;
+    }
+
+    .section-descripcion {
+        font-size: 16px;
+    }
+
+    .planes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .plan-card {
+        padding: 30px 22px;
+        white-space: normal;
+    }
+
+    .plan-card h2 {
+        font-size: 26px;
+    }
+}
+/*celular*/
+@media (max-width: 480px){
+    .suscripcion {
+        padding: 20px 15px 30px;
+    }
+
+    .suscripcion-logo {
+        margin-bottom: 20px;
+    }
+
+    .suscripcion-logo img {
+        width: 180px;
+    }
+
+    .sus-header {
+        margin-bottom: 25px;
+    }
+
+    .sus-header h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .section-descripcion {
+        font-size: 14px;
+    }
+
+    .planes {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .plan-card {
+        width: 100%;
+        min-height: auto;
+        padding: 25px 20px;
+        white-space: normal;
+    }
+
+    .plan-card h2 {
+        font-size: 25px;
+    }
+
+    .plan-descripcion {
+        min-height: auto;
+        font-size: 14px;
+    }
+
+    .beneficios {
+        gap: 10px;
+        margin-bottom: 20px;
+        padding-left: 0;
+    }
+
+
+}
