@@ -69,7 +69,7 @@
 
 .publicidad-box p {
     margin-bottom: 20px;
-
+    
 }
 
 .publicidad-box a {
@@ -79,34 +79,4 @@
 
 .publicidad-box a:hover {
     color: var(--color-primary);
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-@media (max-width: 576px) {
-    .publicidad-box {
-        display: none;
-    }
-
-    .search-box,
-    .categorias-box {
-        width: 100%;
-    }
-}
-
-@media (max-width: 375px) {
-
-    .search-box input {
-        width: 100%;
-    }
-
-    .paginacion {
-        gap: 5px;
-        flex-wrap: wrap;
-    }
-
-    .paginacion a {
-        min-width: 0;
-        padding: 0 8px;
-    }
 }
