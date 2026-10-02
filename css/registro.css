@@ -1,5 +1,5 @@
 .registro{
-    width: 100%;
+    width: 50%;
     margin: 60px auto;
     padding: 45px;
     background-color: #ffffff;
@@ -53,6 +53,15 @@ font-size: 15px;
 }
 .terminos input {
     cursor: pointer;
+}
+.terminos a{
+    color: var(--color-textdark);
+    text-decoration: none;
+}
+.terminos a:hover{
+    background-color: var(--color-secondary);
+    padding: 6px;
+    border-radius: 12px;
 }
 .boton-crear {
     width: 100%;
