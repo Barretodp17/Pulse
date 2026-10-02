@@ -107,3 +107,68 @@ color: var(--color-textlight);
 .inicio:hover{
     color: var(--color-primary);
 }
+
+/*tablet*/
+@media (max-width: 769px){
+    /* ===== LOGIN ===== */
+    .login-page {
+        padding: 30px 25px;
+    }
+
+    .login-logo img {
+        width: 210px;
+    }
+
+    .login-card {
+        max-width: 430px;
+        padding: 35px;
+    }
+
+
+}
+
+/*celular*/
+@media (max-width: 480){
+    .login-page {
+        padding: 20px 15px;
+    }
+
+    .login-logo {
+        margin-bottom: 20px;
+    }
+
+    .login-logo img {
+        width: 180px;
+    }
+
+    .login-card {
+        width: 100%;
+        max-width: 380px;
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .login-card h1 {
+        font-size: 24px;
+    }
+
+    .login-descripcion {
+        font-size: 15px;
+    }
+
+    .formulario input {
+        padding: 12px;
+    }
+
+    .recuperacion {
+        margin: 15px 0;
+    }
+
+    .recuperacion a {
+        font-size: 13px;
+    }
+
+    .login-boton {
+        padding: 12px;
+    }
+}

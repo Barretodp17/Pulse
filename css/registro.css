@@ -80,3 +80,61 @@ font-size: 15px;
 .login-link a:hover{
     text-decoration: underline
 }
+
+/*tablet*/
+@media (max-width: 768px){
+    .registro {
+        width: 90%;
+        max-width: 600px;
+        margin: 40px auto;
+    }
+
+    .form-registro {
+        width: 100%;
+    }
+
+    .grupos input {
+        width: 100%;
+    }
+}
+/*celular*/
+@media (max-width: 480px){
+   .registro {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .regis-header {
+        text-align: center;
+    }
+
+    .regis-header h2 {
+        font-size: 27px;
+    }
+
+    .regis-header p {
+        font-size: 14px;
+    }
+
+    .form-registro {
+        width: 100%;
+    }
+
+    .grupos {
+        width: 100%;
+    }
+
+    .grupos input {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .terminos {
+        font-size: 13px;
+    }
+
+    .boton-crear {
+        width: 100%;
+        padding: 12px;
+    } 
+}
