@@ -26,11 +26,15 @@
     text-align: center;
     width: 180px;
 }
+
 .integrante img{
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
+}
+.integrante img:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 .integrante h3{
     margin: 15px;

@@ -8,7 +8,7 @@
 
 .search-box h2,
 .categorias-box h2 {
-    font-size: 22px;
+    font-size: 25px;
     color: var(--color-textdark);
     margin-bottom: 20px;
 
@@ -52,31 +52,19 @@
 }
 
 .publicidad-box {
-    min-height: 300px;
-    padding: 30px;
-    background-color: var(--color-dark);
-    color: var(--color-light);
+    width: 100%;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.publicidad-box h2 {
-    font-size: 40px;
-    color: var(--color-primary);
-}
-
-.publicidad-box p {
-    margin-bottom: 20px;
+    overflow: hidden;
+    transform: translateY(-55px);
+    transition: transform 0.3s ease;
     
 }
+.publicidad-box img {
+    width: 100%;
+    height: auto;
+    display: block;
 
-.publicidad-box a {
-    color: var(--color-light);
-    text-decoration: none;
 }
-
-.publicidad-box a:hover {
-    color: var(--color-primary);
+.publicidad-box:hover {
+    transform: translateY(-70px);
 }
