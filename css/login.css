@@ -101,7 +101,9 @@ color: var(--color-textlight);
     text-align: center;
     font-size: 14px;
     color: var(--color-textdark);
+    
 }
 .inicio:hover{
     color: var(--color-primary);
+    box-shadow: 0 5px 25px rgba(213, 125, 10, 0.283);
 }
