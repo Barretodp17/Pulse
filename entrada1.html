@@ -80,7 +80,7 @@
 
 
             <a href="index.html" class="volver">
-                 Volver al blog
+                Volver al blog
             </a>
 
             <section class="comentarios">
@@ -89,21 +89,21 @@
                     Comentarios
                 </h2>
 
-                <!-- FORMULARIO -->
-
                 <form class="comentarios-form">
 
                     <label for="nombre">
                         Nombre
                     </label>
 
-                    <input type="text" id="nombre" placeholder="Tu nombre" minlength="3">
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required minlength="3"
+                        pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+"
+                        title="El nombre debe tener al menos 3 letras y no puede contener números">
 
                     <label for="comentario">
                         Comentario
                     </label>
 
-                    <textarea id="comentario" rows="5" minlength="6"  placeholder="Escribí tu comentario..."></textarea>
+                    <textarea id="comentario" rows="5" minlength="6" placeholder="Escribí tu comentario..."></textarea>
 
 
                     <button type="submit">
@@ -249,7 +249,54 @@
 
     </main>
     <footer>
+        <div class="columna">
+            <img src="assets/logo (2).png" alt="logo" class="logo-footer">
+            <h2>EL RITMO QUE CONECTA</h2>
+            <p>Un espacio para los que viven la musica. Noticias, historias y todo lo que hace latir esta
+                pasión.</p>
 
+            <a href="#">
+                <img src="assets/fc icon.png" class="imagen-fotter"></img>
+            </a>
+            <a href="#">
+                <img src="assets/ig icon.png" class="imagen-fotter"></img>
+            </a>
+            <a href="#">
+                <IMG src="assets/sp icon.png" class="imagen-fotter"></img>
+            </a>
+            <a href="#">
+                <img src="assets/x icon.png" class="imagen-fotter"></img>
+            </a>
+        </div>
+        <div class="enlaces_footer">
+            <h3>Enlaces</h3>
+            <a href="index.html">Inicio</a>
+            <a href="#Categorias">Categoria</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+
+        </div>
+
+        <div class="contacto_footer">
+
+            <h3>Contacto</h3>
+
+            <a href="mailto:pulseblog@gmail.com">
+                pulseblog@gmail.com
+            </a>
+
+            <a href="https://wa.me/541112341234" target="_blank">
+                +54 011-12341234
+            </a>
+
+            <p>Buenos aires, CABA</p>
+
+        </div>
+
+        <div class="copyright">
+            ©2026 PULSE. Todos los derechos reservados.
+        </div>
     </footer>
 </body>
 

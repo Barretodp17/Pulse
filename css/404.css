@@ -94,56 +94,23 @@
     transition: all 0.3s ease;
 }
 
-
 .btn-inicio:hover {
     background-color: var(--color-secondary);
 
     transform: translateY(-2px);
 }
 
-
-
 @media (max-width: 768px) {
 
-    .gameWindow {
-        width: 92%;
-
-        padding: 30px 20px;
-    }
-
-    .gameWindow h2 {
-        font-size: 70px;
-    }
-
-    .gameWindow p {
-        font-size: 18px;
-    }
-
     .gameWindow iframe {
-        height: 300px;
+        display: none;
     }
-
 }
-
 
 @media (max-width: 576px) {
 
-    .gameWindow {
-        width: 94%;
-
-        padding: 25px 15px;
-    }
-
-    .gameWindow h2 {
-        font-size: 60px;
-    }
-
-    .gameWindow p {
-        font-size: 16px;
-    }
-
-    .gameWindow iframe {
-        height: 250px;
+     .gameWindow iframe {
+        display: none;
     }
 
 }
