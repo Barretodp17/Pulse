@@ -95,15 +95,15 @@ color: var(--color-textlight);
     color: var(--color-textdark);
     font-weight: 600;
 }
-.inicio{
+.inicio1{
     display: block;
     margin-top: 20px;
     text-align: center;
     font-size: 14px;
     color: var(--color-textdark);
-    
+    text-decoration: none;
 }
-.inicio:hover{
+.inicio1:hover{
     color: var(--color-primary);
     box-shadow: 0 5px 25px rgba(5, 3, 0, 0.120);
 }
