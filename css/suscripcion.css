@@ -5,18 +5,19 @@ body{
 
 .suscripcion{
     min-height: 100vh;
-    padding: 30px 6% 40px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .suscripcion-logo{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .suscripcion-logo img{
     width: 230px;
     max-width: 100%;
     display: block;
+    margin-top: -40px;
 }
 .sus-header{
     text-align: center;
@@ -30,6 +31,7 @@ body{
     max-width: 520px;
     font-size: 18px;
     color: var(--color-grey);
+    line-height: 1.5;
 }
 .planes{
     width: 100%;

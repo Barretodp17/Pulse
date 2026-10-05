@@ -35,6 +35,7 @@
 }
 .integrante img:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
 }
 .integrante h3{
     margin: 15px;
