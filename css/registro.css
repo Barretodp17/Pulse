@@ -90,6 +90,26 @@ font-size: 15px;
     text-decoration: underline
 }
 
+.inicioo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+.inicioo a {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.inicioo a:hover{
+     background-color: var(--color-secondary);
+    transform: translateY(-2px);
+}
+
 /*tablet*/
 @media (max-width: 768px){
     .registro {
