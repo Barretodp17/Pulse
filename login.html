@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse</title>
+    <link rel="shortcut icon" href="assets/logo--.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="login-page">
+        <!--LOGO-->
+        <div class="login-logo">
+            <a href="index.html">
+                <img src="assets/logo (2).png" alt="logo Pulse">
+            </a>
+        </div>
+        <!--TARJETA DE INICIO DE SESIÓN-->
+        <section class="login-card">
+            <h1>Iniciar sesión</h1>
+        <p class="login-descripcion">
+            Ingresa a tu cuenta de PULSE
+        </p>
+        <form action="#" method="post">
+            <!--EMAIL-->
+            <div class="formulario">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Ingresar correo electrónico" required>
+            </div>
+            <!--CONTRASEÑA-->
+            <div class="formulario">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}"
+  title="Debe tener al menos 8 caracteres, una mayúscula, una minúscula y un número"  placeholder="Ingresar contraseña" required>
+            </div>
+            <!--RECUPERAR CONTRASEÑA-->
+            <div class="recuperacion">
+                <a href="error404.html">¿Olvidaste tu contraseña?</a>
+            </div>
+            <!--BOTÓN-->
+            <button type="submit" class="login-boton">
+                Ingresar
+            </button>
+        </form>
+
+        <!--REGISTRO-->
+        <p class="p-registro">
+            ¿No tenes una cuenta?
+            <a href="suscripcion.html">Suscribite acá</a>
+        </p>
+
+        <!--VOLVER A INICIO-->
+        <a href="index.html" class="inicio1">
+            ⟵ Volver al inicio
+        </a>
+        </section>
+    </main>
+</body>
+
+</html>

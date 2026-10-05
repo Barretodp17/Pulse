@@ -4,17 +4,236 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,100..1000&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/logo--.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-
+    <header class="navbarInicio">
+        <div class="logo">
+            <img src="assets/logo (2).png" alt="logo">
+        </div>
+        <nav class="opciones">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="acciones">
+            <a href="login.html" class="login">Iniciar sesión</a>
+            <a href="suscripcion.html" class="suscribirse">Suscribirse</a>
+        </div>
     </header>
-    <mail>
+    <main>
+        <section class="hero">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-    </mail>
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/imgCarousel/carruselUno.png" alt="Los Angeles" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/imgCarousel/CarruselDos.png" alt="Chicago" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/imgCarousel/CarruselTres.png" alt="New York" class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!--seccion principal-->
+        <section class="blog">
+            <div class="posts">
+                <div class="posts-header">
+                    <h2>Ultimas entradas</h2>
+                </div>
+                <!--entrada1-->
+                <article class="post">
+                    <iframe data-testid="embed-iframe" style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/37LIA8IcVpMhaWZY2V2Ujy?utm_source=generator&si=0143fff1d95a4d15"
+                        height="352" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                    <div class="post-info">
+                        <h3>Los lanzamientos musicales
+                            que están marcando el año</h3>
+                        <p>
+                            Repasamos algunos de los lanzamientos
+                            musicales más destacados y las canciones
+                            que están marcando tendencia.
+                        </p>
+                        <a href="entrada1.html">
+                            Ver más
+                        </a>
+                    </div>
+                </article>
+                <!--ENTRADA2-->
+                <article class="post">
+                    <img src="assets/ImgPrincipal/ImgEntradaDos.png" alt="">
+                    <div class="post-info">
+                        <h3>Cómo cambió la música
+                            con el streaming</h3>
+                        <p>
+                            De los discos físicos a las plataformas
+                            digitales, repasamos cómo cambió la
+                            manera en que escuchamos música.
+                        </p>
+                        <a href="entrada2.html">
+                            Ver más
+                        </a>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <img src="assets/ImgPrincipal/imgEntradaTres.png" alt="">
+                    <div class="post-info">
+                        <h3>La evolución del sonido electrónico</h3>
+                        <p>
+                            Desde los primeros sintetizadores hasta
+                            las producciones actuales, recorremos la
+                            evolución de la música electrónica.
+                        </p>
+                        <a href="entrada3.html">
+                            Ver más
+                        </a>
+                    </div>
+                </article>
+                <!--paginacion-->
+                <nav class="paginacion">
+                    <a href="error404.html">Anterior</a>
+                    <a href="index.html" class="active">1</a>
+                    <a href="index.html">2</a>
+                    <a href="index.html">3</a>
+                    <a href="error404.html">siguiente</a>
+                </nav>
+            </div>
+
+            <!--segunda columna-->
+            <aside class="sidebar">
+                <div class="search-box">
+                    <h2>Buscar</h2>
+                    <form action="error404.html">
+                        <input type="text" placeholder=" buscar articulos...">
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>
+                <div class="categorias-box" id="Categorias">
+                    <h2>Categorias</h2>
+                    <ul>
+                        <li>
+                            <a href="categotia.html">Música latina</a>
+                        </li>
+                        <li>
+                            <a href="error404.html">Rock</a>
+                        </li>
+                        <li>
+                            <a href="error404.html">Pop</a>
+                        </li>
+                        <li>
+                            <a href="error404.html">Jazz</a>
+                        </li>
+                        <li>
+                            <a href="error404.html">Hip Hop</a>
+                        </li>
+                        <li>
+                            <a href="error404.html">Electronica</a>
+                        </li>
+                        <li>
+                            <a href="error404.html">Metal</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Publicidad-->
+                <div class="publicidad-box">
+                    <a href="suscripcion.html">
+                        <img src="assets/ImgPrincipal/publicidad-pulse.png" alt="Publicidad PULSE">
+                    </a>
+                </div>
+            </aside>
+        </section>
+        
+    </main>
+
     <footer>
+        <div class="columna">
+            <img src="assets/logo (2).png" alt="logo" class="logo-footer">
+            <h2>EL RITMO QUE CONECTA</h2>
+            <p>Un espacio para los que viven la musica. Noticias, historias y todo lo que hace latir esta
+                pasión.</p>
+            <a href="#">
+                <img src="assets/fc icon.png" class="imagen-fotter"></img>
+            </a>
+            <a href="#">
+                <img src="assets/ig icon.png" class="imagen-fotter"></img>
+            </a>
+            <a href="#">
+                <IMG src="assets/sp icon.png" class="imagen-fotter"></img>
+            </a>
+            <a href="#">
+                <img src="assets/x icon.png" class="imagen-fotter"></img>
+            </a>
+        </div>
+        <div class="enlaces_footer">
+            <h3>Enlaces</h3>
+            <a href="index.html">Inicio</a>
+            <a href="#Categorias">Categoria</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
 
+        </div>
+
+        <div class="contacto_footer">
+            <h3>Contacto</h3>
+            <a href="mailto:pulseblog@gmail.com">
+                pulseblog@gmail.com
+            </a>
+            <a href="https://wa.me/541112341234" target="_blank">
+                +54 011-12341234
+            </a>
+            <p>Buenos aires, CABA</p>
+        </div>
+
+        <div class="copyright">
+            ©2026 PULSE. Todos los derechos reservados.
+        </div>
     </footer>
+    <a href="index.html" class="btn-volver-arriba">
+    ↑ Volver al inicio
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>

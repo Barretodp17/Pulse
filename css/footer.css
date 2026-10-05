@@ -1,0 +1,137 @@
+footer {
+    background-color: #f25d27;
+    color: white;
+    padding: 40px 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.enlaces_footer {
+    display: flex;
+    flex-direction: column;
+    color: #172334;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+.enlaces_footer a {
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.enlaces_footer h3 {
+    color: #172334;
+    margin-bottom: 20px;
+}
+
+.enlaces_footer a:hover{
+    color: #172334;
+}
+
+.logo-footer {
+    width: 150px;
+    height: auto;
+    margin-bottom: -10px;
+    display: block;
+}
+
+.columna {
+    transform: translateY(-55px);
+}
+.columna h2 {
+    font-size: 20px;
+}
+
+.columna p {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.imagen-fotter {
+    width: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    text-align: center;
+    transform: translateY(-35px)
+}
+
+.contacto_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+
+.contacto_footer h3 {
+    color: #172334;
+    margin-bottom: 20px;
+}
+
+.contacto_footer a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.contacto_footer a:hover {
+    text-decoration: underline;
+}
+
+.contacto_footer p {
+    margin: 0;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        padding: 30px 20px 20px;
+    }
+
+    footer .columna,
+    footer .enlaces_footer,
+    footer .contacto_footer {
+        width: 100%;
+        align-items: center;
+    }
+
+    footer .logo-footer {
+        width: 130px;
+        margin: 0 auto 10px;
+    }
+
+    .enlaces_footer {
+        align-items: center;
+    }
+
+    .contacto_footer {
+        align-items: center;
+    }
+
+    .columna p {
+        font-size: 13px;
+    }
+
+    .copyright {
+    margin-top: 10px;
+    padding-top: 15px;
+    }
+}
