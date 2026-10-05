@@ -82,9 +82,11 @@
 .inicio{
     text-align: center;
     margin-top: 25%;
-    padding: 30px;
+    margin-bottom: 25%;
+    padding: 10px;
     text-decoration: none;
     color: var(--color-primary);
+    border-radius: 8px;
 }
 
 @media (max-width: 768px) {
@@ -178,5 +180,4 @@
         padding: 20px 15px;
         font-size: 14px;
     }
-
 }
