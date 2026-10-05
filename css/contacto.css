@@ -98,7 +98,7 @@
         padding: 20px;
     }
 
-    .contacto-container {
+    .contacto{
         flex-direction: column;
         gap: 35px;
         margin: 20px auto;
