@@ -20,13 +20,14 @@
                 <!--nombre-->
                 <div class="grupos">
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingresar nombre" required> 
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresar nombre" minlength="3" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ]{3,}" title="solo se permiten letras y espacios. mínimo 3 letras" required> 
                 </div>
                 <!--apellido-->
                 <div class="grupos">
                     <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Ingresar apellido" required>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingresar apellido" minlength="3" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ]{3,}" title="solo se permiten letras y espacios. mínimo 3 letras" required >
                 </div>
+                
                 <!--email-->
                 <div class="grupos">
                     <label for="email">Email</label>
